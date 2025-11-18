@@ -4,11 +4,21 @@ function calcular() {
     var total = 0;
 
     if (marcaVehiculo == "HONDA") {
-        total = total + 140000;
+        total += 140000;
     } else if (marcaVehiculo == "NISSAN") {
-        total = total + 180000;
+        total += 180000;
     } else if (marcaVehiculo == "TOYOTA") {
-        total = total + 155000;
+        total += 155000;
+    } else if (marcaVehiculo == "MAZDA") {
+        total += 110000;
+    } else if (marcaVehiculo == "HYUNDAI") {
+        total += 130000;
+    } else if (marcaVehiculo == "KIA") {
+        total += 190000;
+    } else if (marcaVehiculo == "MITSUBISHI") {
+        total += 160000;
+    } else if (marcaVehiculo == "SUZUKI") {
+        total += 175000;
     }
 
     document.getElementById("total").innerText = "Total: $" + total + " MXN";
