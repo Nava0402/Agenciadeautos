@@ -120,50 +120,51 @@
                 <div class="campoFormulario">
                     <label for="marcaVehiculo">Selección de la marca del vehículo:</label>
                     <select id="marcaVehiculo" name="marcaVehiculo" required>
-                        <option value="">Ninguna</option>
-                        <option value="HONDA">HONDA</option>
-                        <option value="NISSAN">NISSAN</option>
-                        <option value="TOYOTA">TOYOTA</option>
-                        <option value="MAZDA">MAZDA</option>
-                        <option value="HYUNDAI">HYUNDAI</option>
-                        <option value="KIA">KIA</option>
-                        <option value="MITSUBISHI">MITSUBISHI</option>
-                        <option value="SUZUKI">SUZUKI</option>
+                        <option value="HONDA" id="HONDA">HONDA (140,000 MXN)</option>
+                        <option value="NISSAN" id="NISSAN">NISSAN (180,000 MXN)</option>
+                        <option value="TOYOTA" id="TOYOTA">TOYOTA (155,000 MXN)</option>
+                        <option value="110000" id="MAZDA">MAZDA (110,000 MXN)</option>
+                        <option value="130000" id="HYUNDAI">HYUNDAI (130,000 MXN)</option>
+                        <option value="190000" id="KIA">KIA (190,000 MXN)</option>
+                        <option value="160000" id="MITSUBISHI">MITSUBISHI (160,000 MXN)</option>
+                        <option value="175000" id="SUZUKI">SUZUKI (175,000 MXN)</option>
                     </select>
                 </div>
 
                 <div class="campoFormulario checkboxGroup">
-                    <label>Características adicionales:</label>
+                    <label>Características adicionales (3,500 MXN cada una):</label>
                     <div class="checkboxes">
                         <div class="checkboxItem">
-                            <input type="checkbox" id="aireAcondicionado" name="caracteristicas" value="Aire Acondicionado">
+                            <input type="checkbox" id="aireAcondicionado" name="caracteristicas" value="3500">
                             <label for="aireAcondicionado">Aire Acondicionado</label>
                         </div>
                         <div class="checkboxItem">
-                            <input type="checkbox" id="gps" name="caracteristicas" value="GPS">
+                            <input type="checkbox" id="gps" name="caracteristicas" value="3500">
                             <label for="gps">GPS</label>
                         </div>
                         <div class="checkboxItem">
-                            <input type="checkbox" id="seguro" name="caracteristicas" value="Incluir Seguro">
+                            <input type="checkbox" id="seguro" name="caracteristicas" value="3500">
                             <label for="seguro">Incluir Seguro</label>
                         </div>
                         <div class="checkboxItem">
-                            <input type="checkbox" id="quemacocos" name="caracteristicas" value="Quemacocos">
+                            <input type="checkbox" id="quemacocos" name="caracteristicas" value="3500">
                             <label for="quemacocos">Quemacocos</label>
                         </div>
                         <div class="checkboxItem">
-                            <input type="checkbox" id="camaraTrasera" name="caracteristicas" value="Cámara trasera">
+                            <input type="checkbox" id="camaraTrasera" name="caracteristicas" value="3500">
                             <label for="camaraTrasera">Cámara trasera</label>
                         </div>
                         <div class="checkboxItem">
-                            <input type="checkbox" id="camaraFrontal" name="caracteristicas" value="Cámara frontal">
+                            <input type="checkbox" id="camaraFrontal" name="caracteristicas" value="3500">
                             <label for="camaraFrontal">Cámara frontal</label>
                         </div>
                     </div>
                 </div>
+
+                <div class="total" id="total">Total: $0.00</div>
             </div>
 
-            <button type="button" id="btnEnviar">Solicitar Cotización</button>
+            <button type="button" id="btnEnviar" onclick="calcular()">Solicitar Cotización</button>
         </form>
     </section>
 
