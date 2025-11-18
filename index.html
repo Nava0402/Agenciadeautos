@@ -18,7 +18,7 @@
     <br>
 
     <section class="fila">
-        <div class="columnaVideo">
+        <div class="columnaVideo">Video de la agencia
             <iframe width="350px" height="" src="https://www.youtube.com/embed/EUeGeLxq45A" title="Agencia de autos seminuevos en Monterrey - PluraMotors®" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
@@ -27,7 +27,7 @@
             AUTOS PERSONALES, DEPORTIVOS Y DE LUJO, SUVS Y MINIVANS, PICKUPS Y COMERCIALES, HIBRIDOS.
         </div>
 
-        <div class="columnaMapa">
+        <div class="columnaMapa">Localización de la agencia
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32496.977619380203!2d-100.32913543834273!3d25.689425472563098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662955a3a41c5ab%3A0xb5ba46de3ce1c0b6!2sAutoAsesor.com%20-%20Autos%20Nuevos%20y%20Seminuevos%20en%20Monterrey!5e0!3m2!1ses-419!2smx!4v1763428874948!5m2!1ses-419!2smx" width="350" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
@@ -109,7 +109,7 @@
 
                 <div class="campoFormulario">
                     <label>Tipo de financiamiento:</label>
-                    <div class="radioGroup">
+                    <div class="radioGroup" id="radioGroup">
                         <input type="radio" id="contado" name="financiamiento" value="Contado" required>
                         <label for="contado">Contado</label>
                         <input type="radio" id="credito" name="financiamiento" value="Crédito" required>
@@ -120,6 +120,7 @@
                 <div class="campoFormulario">
                     <label for="marcaVehiculo">Selección de la marca del vehículo:</label>
                     <select id="marcaVehiculo" name="marcaVehiculo" required>
+                        <option value="NINGUNA" id="NINGUNA">Ninguna</option>
                         <option value="HONDA" id="HONDA">HONDA (140,000 MXN)</option>
                         <option value="NISSAN" id="NISSAN">NISSAN (180,000 MXN)</option>
                         <option value="TOYOTA" id="TOYOTA">TOYOTA (155,000 MXN)</option>
@@ -135,27 +136,27 @@
                     <label>Características adicionales (3,500 MXN cada una):</label>
                     <div class="checkboxes">
                         <div class="checkboxItem">
-                            <input type="checkbox" id="aireAcondicionado" name="caracteristicas" value="3500">
+                            <input type="checkbox" id="aireAcondicionado" name="caracteristicas" value="aireAcondicionado">
                             <label for="aireAcondicionado">Aire Acondicionado</label>
                         </div>
                         <div class="checkboxItem">
-                            <input type="checkbox" id="gps" name="caracteristicas" value="3500">
+                            <input type="checkbox" id="gps" name="caracteristicas" value="gps">
                             <label for="gps">GPS</label>
                         </div>
                         <div class="checkboxItem">
-                            <input type="checkbox" id="seguro" name="caracteristicas" value="3500">
+                            <input type="checkbox" id="seguro" name="caracteristicas" value="seguro">
                             <label for="seguro">Incluir Seguro</label>
                         </div>
                         <div class="checkboxItem">
-                            <input type="checkbox" id="quemacocos" name="caracteristicas" value="3500">
+                            <input type="checkbox" id="quemacocos" name="caracteristicas" value="quemacocos">
                             <label for="quemacocos">Quemacocos</label>
                         </div>
                         <div class="checkboxItem">
-                            <input type="checkbox" id="camaraTrasera" name="caracteristicas" value="3500">
+                            <input type="checkbox" id="camaraTrasera" name="caracteristicas" value="camaraTrasera">
                             <label for="camaraTrasera">Cámara trasera</label>
                         </div>
                         <div class="checkboxItem">
-                            <input type="checkbox" id="camaraFrontal" name="caracteristicas" value="3500">
+                            <input type="checkbox" id="camaraFrontal" name="caracteristicas" value="camaraFrontal">
                             <label for="camaraFrontal">Cámara frontal</label>
                         </div>
                     </div>

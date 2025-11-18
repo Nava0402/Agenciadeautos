@@ -40,6 +40,20 @@ h2 {
     gap: 20px;
 }
 
+.columnaVideo {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.columnaMapa {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
 .columnaTexto {
     background-color: red;
     color:white;
