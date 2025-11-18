@@ -48,9 +48,23 @@ h2 {
     text-align: center;
 }
 
+#parrafoDos {
+    color: white;
+    background-color: blue;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;    
+}
+
 .autosFilaUno {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+.autosFilaDos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
