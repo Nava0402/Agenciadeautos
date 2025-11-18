@@ -109,7 +109,78 @@
     <hr>
 
     <section class="cotizacionVehiculos">
-        <p id="parrafoDos">Cotizar un Vehículo</p>
+        <p id="parrafoDos">Cotización de vehículos</p>
+        
+        <form id="formularioCotizacion">
+            <div class="formularioGrid">
+                <div class="campoFormulario">
+                    <label for="nombreCompleto">Nombre completo del solicitante:</label>
+                    <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+                </div>
+
+                <div class="campoFormulario">
+                    <label for="correoElectronico">Correo electrónico de contacto:</label>
+                    <input type="email" id="correoElectronico" name="correoElectronico" required>
+                </div>
+
+                <div class="campoFormulario">
+                    <label>Tipo de financiamiento:</label>
+                    <div class="radioGroup">
+                        <input type="radio" id="contado" name="financiamiento" value="Contado" required>
+                        <label for="contado">Contado</label>
+                        <input type="radio" id="credito" name="financiamiento" value="Crédito" required>
+                        <label for="credito">Crédito</label>
+                    </div>
+                </div>
+
+                <div class="campoFormulario">
+                    <label for="marcaVehiculo">Selección de la marca del vehículo:</label>
+                    <select id="marcaVehiculo" name="marcaVehiculo" required>
+                        <option value="">Ninguna</option>
+                        <option value="HONDA">HONDA</option>
+                        <option value="NISSAN">NISSAN</option>
+                        <option value="TOYOTA">TOYOTA</option>
+                        <option value="MAZDA">MAZDA</option>
+                        <option value="HYUNDAI">HYUNDAI</option>
+                        <option value="KIA">KIA</option>
+                        <option value="MITSUBISHI">MITSUBISHI</option>
+                        <option value="SUZUKI">SUZUKI</option>
+                    </select>
+                </div>
+
+                <div class="campoFormulario checkboxGroup">
+                    <label>Características adicionales:</label>
+                    <div class="checkboxes">
+                        <div class="checkboxItem">
+                            <input type="checkbox" id="aireAcondicionado" name="caracteristicas" value="Aire Acondicionado">
+                            <label for="aireAcondicionado">Aire Acondicionado</label>
+                        </div>
+                        <div class="checkboxItem">
+                            <input type="checkbox" id="gps" name="caracteristicas" value="GPS">
+                            <label for="gps">GPS</label>
+                        </div>
+                        <div class="checkboxItem">
+                            <input type="checkbox" id="seguro" name="caracteristicas" value="Incluir Seguro">
+                            <label for="seguro">Incluir Seguro</label>
+                        </div>
+                        <div class="checkboxItem">
+                            <input type="checkbox" id="quemacocos" name="caracteristicas" value="Quemacocos">
+                            <label for="quemacocos">Quemacocos</label>
+                        </div>
+                        <div class="checkboxItem">
+                            <input type="checkbox" id="camaraTrasera" name="caracteristicas" value="Cámara trasera">
+                            <label for="camaraTrasera">Cámara trasera</label>
+                        </div>
+                        <div class="checkboxItem">
+                            <input type="checkbox" id="camaraFrontal" name="caracteristicas" value="Cámara frontal">
+                            <label for="camaraFrontal">Cámara frontal</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" id="btnEnviar">Solicitar Cotización</button>
+        </form>
     </section>
 
     <hr>

@@ -66,6 +66,7 @@ h2 {
     height: 30px;
     margin: auto;
     padding: 10px;
+    border-radius: 8px;
 }
 
 .autosFilaUno {
@@ -96,6 +97,115 @@ h2 {
 
 .honda a:hover, .nissan a:hover, .toyota a:hover, .mazda a:hover, .hyundai a:hover, .kia a:hover, .mitsubishi a:hover, .suzuki a:hover {
     color: red;
+}
+
+.cotizacionVehiculos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#formularioCotizacion {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formularioGrid {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.campoFormulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campoFormulario label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.campoFormulario input[type="text"],
+.campoFormulario input[type="email"],
+.campoFormulario select {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.campoFormulario input[type="text"]:focus,
+.campoFormulario input[type="email"]:focus,
+.campoFormulario select:focus {
+    border-color: blue;
+    outline: none;
+}
+
+.radioGroup {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.radioGroup input[type="radio"] {
+    margin-right: 8px;
+}
+
+.radioGroup label {
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.checkboxGroup .checkboxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkboxItem {
+    display: flex;
+    align-items: center;
+}
+
+.checkboxItem input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+.checkboxItem label {
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+#btnEnviar {
+    background-color: blue;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: auto;
+}
+
+#btnEnviar:hover {
+    background-color: #0066cc;
 }
 
 footer {
